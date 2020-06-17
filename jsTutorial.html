@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>jsTutorial</title>
+    <script type="text/javascript" src="./jsTutorial.js"></script>
+    <style>
+    canvas {
+        border:1px solid lightgray;
+        background-color: rgb(165, 234, 255);
+        color:rgb(255, 255, 196);
+      }
+    </style>
+</head>
+<body>
+    <canvas id='d1'></canvas>
+    <input type='color' value='#e3fff3' id='clr' onchange='docolor()'>
+    <input type='range' min='10' max='100' value='10' id='sldr' oninput='colorchange()'>
+</body>
