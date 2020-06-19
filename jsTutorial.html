@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <head>
     <title>jsTutorial</title>
+    <link rel='stylesheet' href='./jsTutorial.css' />
+    <link rel="shortcut icon" href="../HTML_test/test_project/Doge-Meme-of-the-Decade.jpg" />
     <script type="text/javascript" src="./jsTutorial.js"></script>
+    <script src='http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js'></script>
     <style>
     canvas {
-        border:1px solid lightgray;
-        background-color: rgb(165, 234, 255);
+        border:1px solid rgb(176, 106, 255);
+        background-color: rgb(255, 254, 219);
         color:rgb(255, 255, 196);
       }
     </style>
 </head>
 <body>
-    <canvas id='d1'></canvas>
-    <input type='color' value='#e3fff3' id='clr' onchange='docolor()'>
-    <input type='range' min='10' max='100' value='10' id='sldr' oninput='colorchange()'>
+    <div class='container-fluid' align='center'>
+        <h1>Green Screen Web Page</h1>
+        <div class='container col-12'>
+            <canvas id='d1'></canvas> <canvas id='d2'></canvas>
+        </div>
+        <div class='container col-12'>
+            Foreground: <input type='file' multiple='false' accept='image/*' id='fginput' onchange='upload1()'>
+        </div>
+        <br>
+        <div class='container col-12'>
+            Background: <input type='file' multiple='false' accept='image/*' id='bginput' onchange='upload2()'>
+        </div>
+        <br>
+        <div>
+            <input type='button' value='MAKE GRAY 1' id='gray' onclick='gray1()'>
+            <input type='button' value='MAKE GRAY 2' id='gray' onclick='gray2()'>
+        </div>
+        <br>
+        <div>
+            <input type='button' value='MERGE' id='merge' onclick='greenscreen()'>
+        </div>
+        <br>
+        <div>
+            <input type='button' value='CLEAR' id='clear' onclick='clearCanvas()'>
+        </div>
+    </div>
 </body>
