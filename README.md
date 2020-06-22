@@ -4,7 +4,7 @@
 <h2>Done using canvas</h2>
 
 <ul>
-    <li>Able to <h3>UPLOAD</h3> 2 images, background & foreground</li>
+    <li>Able to <b>UPLOAD</b> 2 images, background & foreground</li>
     <li>Able to apply <h3>COLOUR FILTERS</h3> to any of the 2 images</li>
     <li>Able to <h3>BLUR</h3> any of the 2 images</li>
     <li>Able to <h3>RESET</h3> any of the 2 images</li>
