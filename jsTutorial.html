@@ -19,6 +19,7 @@
         <div class='container col-12'>
             <canvas id='d1'></canvas> <canvas id='d2'></canvas>
         </div>
+        <h3>UPLOAD FILES</h3>
         <div class='container col-12'>
             Foreground: <input type='file' multiple='false' accept='image/*' id='fginput' onchange='upload1()'>
         </div>
@@ -27,13 +28,28 @@
             Background: <input type='file' multiple='false' accept='image/*' id='bginput' onchange='upload2()'>
         </div>
         <br>
+        <hr>
+        <h3>COLOUR FILTERS</h3>
+        <div class='container col-12'>
+            <input type='button' value='MAKE GRAY 1' onclick='gray1()'>
+            <input type='button' value='MAKE RED 1' onclick='red1()'>
+            <input type='button' value='MAKE RAINBOW 1' onclick='rainbow1()'>
+            <input type='button' value='MAKE BLUR 1' onclick='blur1()'>
+        </div>
+        <br>
+        <div class='container col-12'>
+            <input type='button' value='MAKE GRAY 2' onclick='gray2()'>
+            <input type='button' value='MAKE RED 2' onclick='red2()'>
+            <input type='button' value='MAKE BLUR 2' onclick='blur2()'>
+        </div>
+        <br>
+        <hr>
         <div>
-            <input type='button' value='MAKE GRAY 1' id='gray' onclick='gray1()'>
-            <input type='button' value='MAKE GRAY 2' id='gray' onclick='gray2()'>
+            <input type='button' value='MERGE' id='merge' onclick='greenscreen()'>
         </div>
         <br>
         <div>
-            <input type='button' value='MERGE' id='merge' onclick='greenscreen()'>
+            <input type='button' value='RESET' id='merge' onclick='reset()'>
         </div>
         <br>
         <div>
